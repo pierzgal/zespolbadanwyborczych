@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="pl"><head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="robots" content="index, follow" />
+	<meta name="googlebot" content="index, follow, noarchive" />
+	<title>Zespół Badań Wyborczych</title>
+	<link rel="icon" href="https://pierzgal.github.io/zespolbadanwyborczych/favicon.ico" />
+	<meta name="description" content="Zespół Badań Wyborczych" />
+
+	<meta name="generator" content="Hugo 0.75.1" />
+
+	
+
+	<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Okręgi wyborcze cz. 2 - geometria wyborcza"/>
+<meta name="twitter:description" content="Wybory przedstawicieli do organów publicznych takich jak: sejm, senat, rada gminy, wójt lub prezydent przeprowadza się w okręgach wyborczych. Okręg wyborczy jest jednostką podziału terytorialnego, w której granicach zlicza się głosy wyborców i ustala zwycięzców elekcji w okręgu. Najczęściej, ostateczny wynik wyborów to prosta suma wyników z okręgów. Wielkość (liczba mandatów do zdobycia) i kształt (geometria) okręgów wyborczych może mieć istotny wpływ na wynik wyborów, dlatego ważne jest, aby organ odpowiedzialny za tworzenie granic okręgów był politycznie niezależny."/>
+
+	<meta property="og:title" content="Okręgi wyborcze cz. 2 - geometria wyborcza" />
+<meta property="og:description" content="Wybory przedstawicieli do organów publicznych takich jak: sejm, senat, rada gminy, wójt lub prezydent przeprowadza się w okręgach wyborczych. Okręg wyborczy jest jednostką podziału terytorialnego, w której granicach zlicza się głosy wyborców i ustala zwycięzców elekcji w okręgu. Najczęściej, ostateczny wynik wyborów to prosta suma wyników z okręgów. Wielkość (liczba mandatów do zdobycia) i kształt (geometria) okręgów wyborczych może mieć istotny wpływ na wynik wyborów, dlatego ważne jest, aby organ odpowiedzialny za tworzenie granic okręgów był politycznie niezależny." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://pierzgal.github.io/zespolbadanwyborczych/blog/okr-gi-wyborcze-cz-2/" />
+<meta property="article:published_time" content="2019-11-22T18:35:52+01:00" />
+<meta property="article:modified_time" content="2019-11-22T00:00:00+00:00" />
+
+
+	
+	<style>
+	:root {
+		 
+		--text:  #232f34 ;
+		--background:  #ffffff ;
+		--accent:  #344955 ;
+		--foreground:  #edf0f2 ;
+		--separator:  #1eb980 ;
+		--cyan:  #f9aa33 ;
+		--green:  #f9aa33 ;
+		--orange:  #ffb86c ;
+		--pink:  #f9aa33 ;
+		--purple:  #f9aa33 ;
+		--red:  #f9aa33 ;
+		--yellow:  #b4c1cc ;
+
+		 
+		--base:  1em ;
+		--p:  1.25em ;
+		--h4:  1.563em ;
+		--h3:  1.953em ;
+		--h2:  2.9em ;
+		--h1:  4.052em ;
+	}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://pierzgal.github.io/zespolbadanwyborczych/css/bundle.min.css">
+
+
+
+	
+	
+</head><body>
+	<header class="header" id="header">
+
+    
+    <div class="header__title">
+        <a href="https://pierzgal.github.io/zespolbadanwyborczych/" class="header__title__link" alt="https://pierzgal.github.io/zespolbadanwyborczych/">
+            
+            Zespół Badań Wyborczych
+            
+        </a>
+    </div>
+
+    
+    <nav class="menu">
+    <details class="menu__toggle">
+        <summary class="menu__toggle__title">Menu</summary>
+
+        <div class="menu__items" role="menu">
+            
+            <a href="/zespolbadanwyborczych/" class="menu__items__item" alt="Home" role="menuitem">
+                Home
+            </a>
+            
+            <a href="/zespolbadanwyborczych/about/" class="menu__items__item" alt="About" role="menuitem">
+                About
+            </a>
+            
+            <a href="/zespolbadanwyborczych/blog/" class="menu__items__item" alt="Analizy" role="menuitem">
+                Analizy
+            </a>
+            
+            <a href="/zespolbadanwyborczych/projekty/" class="menu__items__item" alt="Projekty" role="menuitem">
+                Projekty
+            </a>
+            
+            <a href="/zespolbadanwyborczych/pracownicy/" class="menu__items__item" alt="Członkowie" role="menuitem">
+                Członkowie
+            </a>
+            
+            <a href="/zespolbadanwyborczych/konferencje/" class="menu__items__item" alt="Konferencje" role="menuitem">
+                Konferencje
+            </a>
+            
+            <a href="/zespolbadanwyborczych/dydaktyka/" class="menu__items__item" alt="Dydaktyka" role="menuitem">
+                Dydaktyka
+            </a>
+            
+        </div>
+
+    </details>
+</nav>
+
+</header>
+
+	<main class="main">
+<article class="single">
+    
+    
+
+    
+    <header class="single__header bkg-image" style=" ">
+        <h1 class="single__header__title">Okręgi wyborcze cz. 2 - geometria wyborcza</h1>
+
+        
+        <p class="single__header__date">
+            
+            November 22, 2019
+            
+        </p>
+        
+
+        
+        <p class="single__header__author">
+            By Maciej Onasz, Michał Pierzgalski, Paweł Stępień
+        </p>
+        
+
+        
+
+    </header>
+
+    
+    <main class="single__content">
+        <p><strong>Wybory przedstawicieli do organów publicznych takich jak: sejm, senat, rada gminy, wójt lub prezydent przeprowadza się w okręgach wyborczych</strong>. Okręg wyborczy jest jednostką podziału terytorialnego, w której granicach zlicza się głosy wyborców i ustala zwycięzców elekcji w okręgu. Najczęściej, ostateczny wynik wyborów to prosta suma wyników z okręgów. Wielkość (liczba mandatów do zdobycia) i kształt (geometria) okręgów wyborczych może mieć istotny wpływ na wynik wyborów, dlatego ważne jest, aby organ odpowiedzialny za tworzenie granic okręgów był politycznie niezależny. W Polsce, na potrzeby przeprowadzenia wyborów do rad gmin, strukturę okręgów wyborczych uchwala rada gminy, co jednak ulegnie zmianie, ponieważ rysowaniem granic okręgów, od przyszłego roku, ma zajmować się komisarz wyborczy.</p>
+<p><strong>Okręgi wyborcze - do czego służą?</strong></p>
+<p>W każdym okręgu wyborczym do podziału jest co najmniej jeden mandat; np. w wyborach do Senatu RP, od 2011 r., stosuje się podział kraju na 100 jednomandatowych okręgów. W niektórych przypadkach (np. w wyborach do izby niższej parlamentu Holandii), w wyborach do organów kolegialnych stosuje się tylko jeden okręg, w którym każda lista partyjna może zdobyć tyle mandatów ile dostępnych jest miejsc w danym organie przedstawicielskim. Wybory do Sejmu RP przeprowadza się obecnie w 41 okręgach wyborczych, w których wybiera się od 7 do 20 mandatów. Z drugiej strony, np. w wyborach prezydenckich w Polsce stosuje się tylko jeden jednomandatowy okręg wyborczy obejmujący cały kraj.</p>
+<h2 id="w-jaki-sposób-kształt-okręgu-wyborczego-wpływa-na-wynik-wyborów"><strong>W jaki sposób kształt okręgu wyborczego wpływa na wynik wyborów?</strong></h2>
+<p>Manipulację kształtem okręgów wyborczych określa się terminem gerrymandering. Termin gerrymandering pochodzi od nazwiska gubernatora stanu Massachusetts Elbridge Gerry&rsquo;ego z Partii Demokratyczno-Republikańskiej (tzw. The Jeffersonian Republican party), który w 1812 r. podpisał ustawę, która zmieniła granice okręgów wyborczych w taki sposób, że struktura okręgów stosowanych w wyborach do Senatu stanowego Massachusetts stała się korzystna dla kandydatów Partii Demokratyczno-Republikańskiej. Jeden z powstałych wtedy okręgów wyborczych został później na łamach jednej z bostońskich gazet („Boston Gazette” z 26 marca 1812) przedstawiony w satyryczny sposób jako dziwny kształt mający przypominać salamandrę (Gerry-[Sala]mander). Od tamtej chwili, terminem gerry-mander określano okręgi, które poddane zostały manipulacji motywowanej chęcią poprawienia wyniku wyborczego partii lub poszczególnych kandydatów.</p>
+<p><img src="/zespolbadanwyborczych/images/Gerry-mander-1812.jpg" alt="" title="" width="500px" />
+<cite>Wikimedia Commons.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></cite></p>
+<p><strong>Jak działa gerrymandering?</strong> Na rysunku 1 przedstawiono trzy podziały na cztery jednomandatowe okręgi wyborcze. Należy zauważyć, że rozkład przestrzenny wyborców jest jednakowych na wszystkich trzech obszarach. Obszary różnią się jedynie granicami okręgów. Ponadto, w każdym okręgu na mandat przypada taka sama liczba wyborców reprezentowanych przez kwadraty i koła (6 wyborców na mandat). Jednak, każdy z przedstawionych podziałów skutkuje innym wynikiem elekcji. Na pierwszym obszarze od lewej wygrywa partia reprezentowana przez kwadraty, na środkowym mamy remis, natomiast na ostatnim rysunku, stosunkiem 3:1, wygrywa partia oznaczona kołem.</p>
+<p><strong>Rysunek 1</strong>: Na czym polega gerrymandering? Każdy z trzech kwadratów przedstawia możliwy obszar, na którym przeprowadza się wybory. Załóżmy, że w elekcji biorą udział tylko dwie partie polityczne - partia A i B. Kandydaci partii A są symbolicznie oznaczeni kołami, kandydaci partii B są reprezentowani przez kwadraty.</p>
+<p><img src="/zespolbadanwyborczych/images/gerry-scheme.png" alt="" title="" width="" /></p>
+<blockquote>
+<p><strong>Źródło</strong>: Opracowanie własne.</p>
+</blockquote>
+<p>Tak jak pokazano na rysunku nr 1, gerrymandering umożliwia zmianę wyniku elekcji poprzez manipulację granicami okręgów wyborczych - bez zmiany przestrzennego rozkładu głosów wyborców.</p>
+<p>Rysunek 2 ilustruje praktyczne zastosowanie gerrymanderingu (wybory do Izby Reprezentantów w USA). Przyglądając się nietypowym kształtom sąsiadujących okręgów nr 4 (kolor czarny) i 7 (kolor szary), można zapytać o uwarunkowania ustalonego kształtu granic na tym obszarze. Taki podział na okręgi jest związany z rozkładem przestrzennym dwóch grup społecznych zamieszkujących omawiane terytorium. Otóż, na terytorium okręgu nr 7 większość mieszkańców, ok. 55%, to Afroamerykanie. Następną co do wielkości grupą etniczną są biali, którzy stanowią ok. 32% mieszkańców. Z tego okręgu wyborczego, nieprzerwanie od 1997 roku, kongresmenem jest D. K. Davis, który reprezentuje dominującą grupę rasową na tym terenie. W okręgu nr 4 - który można ocenić jako jeden z najbardziej wyrafinowanych przykładów zastosowania gerrymanderingu - nieprzerwanie od 1992 r. wybory do Izby Reprezentantów zwycięża L. Gutierrez (Partia Demokratyczna), kandydat dominującej na tym obszarze grupy ludności latynoskiej – blisko 70% mieszkańców.</p>
+<p><strong>Rysunek 2</strong>: Przykład zastosowania gerrymanderingu. Okręg nr 4 (kolor czarny) i okręg nr 7 (kolor szary) stosowane w wyborach do Izby Reprezentantów Kongresu USA. Okręgi znajdują się w stanie Illinois, obszar miasta Chicago.</p>
+<p><img src="/zespolbadanwyborczych/images/illinois-113-cd.png" alt="" title="" width="600px" /></p>
+<blockquote>
+<p><strong>Źródło</strong>: Opracowanie własne.</p>
+</blockquote>
+<h2 id="gerrymandering-w-polsce"><strong>Gerrymandering w Polsce?</strong></h2>
+<p>W wypadku systemów wyborczych stosowanych w Polsce w wyborach samorządowych, stosowanie gerrymanderingu jest utrudnione. Wynika to z ograniczonej dowolności w ustalaniu granic okręgów. Co do zasady:
+Okręgiem w wyborach do rad gmin jest jednostka pomocnicza (sołectwo, osiedle itp.),
+Okręgiem wyborczym w wyborach do rady powiatu jest gmina,
+Okręgiem wyborczym w wyborach sejmiku województwa jest powiat (lub miasto na prawach powiatu).</p>
+<p>Art. 417 Kodeksu wyborczego stanowi, że okręg wyborczy obejmuje część obszaru gminy. Przy podziale na okręgi, zgodnie z treścią § 2 i § 4 tego artykułu, należy uwzględnić podział gminy na jednostki niższego rzędu – tzw. jednostki pomocnicze (tj. sołectwa, osiedla, dzielnice itp.). Ustawodawca przyjął, że na terenach wiejskich okręgiem wyborczym jest jednostka pomocnicza gminy (np. sołectwo). Jednak, gdy istnieje konieczność, jednostki pomocnicze łączy się w celu utworzenia okręgu bądź dzieli na dwa lub więcej okręgów. Dzieje się tak, gdy wynika to z potrzeby zachowania tzw. jednolitej normy przedstawicielstwa. Jednolitą normę przedstawicielstwa, czyli wskaźnik określający liczbę mieszkańców przypadających na jeden mandat, w wyborach do ciał kolegialnych, wyznacza się poprzez podzielenie liczby mieszkańców gminy przez liczbę dostępnych mandatów (Kodeks wyborczy 2011, art. 419).</p>
+<p><strong>Rysunek 3</strong>: Niebieskim kolorem oznaczono jeden z okręgów wyborczych (złożony z sołectw) stosowanych w gminie Grodzisk Mazowiecki.</p>
+<p><img src="/zespolbadanwyborczych/images/GM_18_2014_2.png" alt="" title="" width="600px" /></p>
+<blockquote>
+<p><strong>Źródło</strong>: Opracowanie własne.</p>
+</blockquote>
+<p>Możliwość skutecznego manipulowania granicami okręgów wyborczych zależy przede wszystkim od przepisów, które określają podmiot odpowiedzialny za rysowanie granic okręgów. Aby wyeliminować gerrymandering, procedura podziału na okręgi wyborcze musi być odpolityczniona - za tworzenie granic okręgów wyborczych powinna odpowiadać politycznie niezależna komisja. Jeżeli chodzi o wybory gminne, obecnie strukturę okręgów wyborczych uchwala rada gminy, a więc właściwie większość polityczna w radzie. Ponadto, prawo wyborcze powinno wymagać zgodności granic okręgów z granicami jednostek podziału administracyjnego (uwzględnienie tzw. granic politycznych) - eliminuje to dowolność w tworzeniu kształtów okręgów.</p>
+<p>Warto podkreślić, że nawet nietypowy kształt okręgu wyborczego (zob. rys. 3) nie jest wystarczającym dowodem potwierdzającym stosowanie gerrymanderingu. Konieczne jest przede wszystkim ukazanie związku pomiędzy modyfikacją granic okręgów wyborczych a potencjalnym zyskiem podmiotu (kandydata/partii), który zainicjował zmiany. Celem gerrymanderingu jest bowiem odniesienie korzyści wyborczych przez określonego kandydata lub ugrupowanie. Aby stwierdzić występowanie gerrymanderingu należy udowodnić, że dokonane zmiany w podziale obszaru wyborczego na okręgi miały charakter intencjonalny.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Wikimedia Commons. <a href="https://commons.wikimedia.org/wiki/File:Gerry-mander-1812-broadside.jpg">https://commons.wikimedia.org/wiki/File:Gerry-mander-1812-broadside.jpg</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+    </main>
+
+    
+    <footer class="single__footer">
+        
+    </footer>
+
+</article>
+
+	</main><footer class="footer" id="footer">
+
+    
+    
+    <section class="social-links" id="socialLinks">
+
+    
+
+    
+    
+    
+    
+    <a href="#" class="social-links__link" alt="codepen" target="_blank" aria-label="#"
+        rel="noopener noreferrer">
+        <span class="social-links__link__icon">
+            
+            <i class="fab fa-codepen"></i>
+            
+        </span>
+    </a>
+    
+    
+    
+    <a href="#" class="social-links__link" alt="facebook" target="_blank" aria-label="#"
+        rel="noopener noreferrer">
+        <span class="social-links__link__icon">
+            
+            <i class="fab fa-facebook"></i>
+            
+        </span>
+    </a>
+    
+    
+    
+    
+    
+    <a href="#" class="social-links__link" alt="github" target="_blank" aria-label="#"
+        rel="noopener noreferrer">
+        <span class="social-links__link__icon">
+            
+            <i class="fab fa-github"></i>
+            
+        </span>
+    </a>
+    
+    
+    
+    <a href="#" class="social-links__link" alt="gitlab" target="_blank" aria-label="#"
+        rel="noopener noreferrer">
+        <span class="social-links__link__icon">
+            
+            <i class="fab fa-gitlab"></i>
+            
+        </span>
+    </a>
+    
+    
+    
+    <a href="#" class="social-links__link" alt="instagram" target="_blank" aria-label="#"
+        rel="noopener noreferrer">
+        <span class="social-links__link__icon">
+            
+            <i class="fab fa-instagram"></i>
+            
+        </span>
+    </a>
+    
+    
+    
+    
+    
+    
+    
+    <a href="#" class="social-links__link" alt="pinterest" target="_blank" aria-label="#"
+        rel="noopener noreferrer">
+        <span class="social-links__link__icon">
+            
+            <i class="fab fa-pinterest"></i>
+            
+        </span>
+    </a>
+    
+    
+    
+    <a href="#" class="social-links__link" alt="rss" target="_blank" aria-label="#"
+        rel="noopener noreferrer">
+        <span class="social-links__link__icon">
+            
+            <i class="fas fa-rss"></i>
+            
+        </span>
+    </a>
+    
+    
+    
+    
+    
+    <a href="#" class="social-links__link" alt="twitter" target="_blank" aria-label="#"
+        rel="noopener noreferrer">
+        <span class="social-links__link__icon">
+            
+            <i class="fab fa-twitter"></i>
+            
+        </span>
+    </a>
+    
+    
+    
+    
+    
+    <a href="#" class="social-links__link" alt="youtube" target="_blank" aria-label="#"
+        rel="noopener noreferrer">
+        <span class="social-links__link__icon">
+            
+            <i class="fab fa-youtube"></i>
+            
+        </span>
+    </a>
+    
+    
+
+</section>
+    <hr>
+    
+
+    
+    
+    <section class="contact-info" id="contactInfo">
+    <address class="contact-info__info">
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+        <p class="contact-info__info__item">
+            <span><i class="fas fa-map-marker-alt"></i></span>
+            ul. Lindleya 3/5, Łódź, POLAND
+        </p>
+        
+
+    </address>
+</section>
+    <hr>
+    
+
+    
+    
+
+    
+    <div class="footer__copy">
+        
+        © 2020 - Zespół Badań Wyborczych
+        
+    </div>
+
+    
+    
+
+
+
+
+<script>
+    let activeSW = false;
+    
+        activeSW = true;
+    
+</script>
+
+<script defer src="https://pierzgal.github.io/zespolbadanwyborczych/sw.min.js"></script>
+<script defer src="https://pierzgal.github.io/zespolbadanwyborczych/js/bundle.min.js"></script>
+
+    
+    
+    
+
+
+
+
+
+<script defer src="" crossorigin="anonymous"></script>
+    
+
+</footer></body>
+
+</html>
